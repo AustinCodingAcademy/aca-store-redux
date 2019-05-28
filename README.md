@@ -3,7 +3,7 @@
 This is a pre made create-react-app project. It has all the functionality of our aca-store up to version 2 with react. Let's add the redux tool to our aca-store app. Once implemented, the webpage should behave exactly the same to the user.
 
 ## Setup
-* fork, clone, http-server, npm i redux, npm start
+* fork, clone, npm i redux, npm start
 ## Analyze Our Code
 * Which state is used by many components
 * Where are we passing props more then one time
