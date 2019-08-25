@@ -7,17 +7,17 @@ export default class ProductList extends React.Component{
         products: []
     }
     componentDidMount(){
-        fetch('https://acastore.herokuapp.com/products')
-    .then((response)=>{return response.json()})
-    .then((data) =>{
-      store.dispatch({type: "PRODUCTS_LOADED", value: data})
-    });
-        // let products = store.getState().products
-        // this.setState({products: products});
-        store.subscribe(()=>{
-            let products = store.getState().products
-            this.setState({products: products});
-        });
+    //     fetch('https://acastore.herokuapp.com/products')
+    // .then((response)=>{return response.json()})
+    // .then((data) =>{
+    //   store.dispatch({type: "PRODUCTS_LOADED", value: data})
+    // });
+        let products = store.getState().products
+        this.setState({products: products});
+        // store.subscribe(()=>{
+        //     let products = store.getState().products
+        //     this.setState({products: products});
+        // });
     }
     
     render(){

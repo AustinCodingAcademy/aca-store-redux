@@ -24,7 +24,7 @@ export default function ProductDetail (props){
         <div className="caption">
             <h4 className="pull-right">
             {props.product.price}</h4>
-            <h4><a href="#">{props.product.name}</a>
+            <h4><a href="0">{props.product.name}</a>
             </h4>
             <p>{props.product.description}</p>
         </div>

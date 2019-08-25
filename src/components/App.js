@@ -2,8 +2,8 @@ import React from "react";
 import ProductList from "./ProductList"
 import ShoppingCart from "./ShoppingCart"
 import Layout from "./Layout"
-import state from "../state";
-import store from "../store";
+// import state from "../state";
+// import store from "../store";
 
 
 export default class App extends React.Component{

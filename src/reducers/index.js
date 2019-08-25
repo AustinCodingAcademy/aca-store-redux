@@ -19,13 +19,13 @@ function products(state=[], action) {
   // }
   // return state
 
-  switch (action.type) {
-    case 'PRODUCTS_LOADED':
-      return [action.value]
-    default:
-      return state
-  }
-  
+  // switch (action.type) {
+  //   case 'PRODUCTS_LOADED':
+  //     return [action.value]
+  //   default:
+  //     return state
+  // }
+  return state
 }
 
 export default combineReducers ({

@@ -29,13 +29,13 @@ export default class Header extends React.Component {
                     <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul className="nav navbar-nav">
                             <li>
-                                <a href="#">About</a>
+                                <a href="1">About</a>
                             </li>
                             <li>
-                                <a href="#">Services</a>
+                                <a href="2">Services</a>
                             </li>
                             <li>
-                                <a href="#">Contact</a>
+                                <a href="3">Contact</a>
                             </li>
                             <li>
                                 <a onClick={()=>{
