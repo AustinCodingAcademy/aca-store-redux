@@ -11,16 +11,17 @@ export default function Layout(props){
     return (
         <div className="App">
         <Header 
-        changeView={props.changeView}
-        cart={props.shoppingCart}/>
+            changeView={props.changeView}
+            // cart={props.shoppingCart}
+        />
     <div className="container">
         <div className="row">
             <div className="col-md-3">
                 <p className="lead">Shop Name</p>
                 <div className="list-group">
-                    <a href="#" className="list-group-item">Category 1</a>
-                    <a href="#" className="list-group-item">Category 2</a>
-                    <a href="#" className="list-group-item">Category 3</a>
+                    <button href="#" className="list-group-item">Category 1</button>
+                    <button href="#" className="list-group-item">Category 2</button>
+                    <button href="#" className="list-group-item">Category 3</button>
                 </div>
             </div>
             {/*comments */}

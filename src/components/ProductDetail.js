@@ -1,4 +1,5 @@
 import React from "react";
+import store from "../store";
 
 export default function ProductDetail (props){
 
@@ -12,7 +13,8 @@ export default function ProductDetail (props){
     let btnAddToCart = "";
     if(props.showAddButton){
       btnAddToCart =   <button onClick={(event)=>{
-            props.addToCart(props.product);
+            // props.addToCart(props.product);
+            store.dispatch({type: 'ADD_PRODUCT_TO_CART', value: props.product})
         }}>Add To Cart</button>
     }
 
@@ -22,13 +24,13 @@ export default function ProductDetail (props){
         <div className="caption">
             <h4 className="pull-right">
             {props.product.price}</h4>
-            <h4><a href="#">{props.product.name}</a>
+            <h4><a href="0">{props.product.name}</a>
             </h4>
             <p>{props.product.description}</p>
         </div>
         <div className="ratings">
             <p className="pull-right">
-            {props.product.reviews.length} reviews</p>
+                {props.product.reviews} reviews</p>
             <p>
                 
                 {star}
